@@ -20,6 +20,19 @@
     "buttonTitle": "Start IQ Test",
     "splashImageUrl": "https://iq-test-v2.vercel.app/icon.png",
     "splashBackgroundColor": "#4F46E5"
+  },
+
+  "display": {
+    "recommended_frame_height": "tall"
+  },
+  "capabilities": {
+    "frames": {
+      "status": "supported"
+    },
+    
+  },
+  "icons": {
+    "192x192": "https://iq-test-v1.vercel.app/icon.png"
   }
 }
 
