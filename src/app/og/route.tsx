@@ -6,7 +6,7 @@ export async function GET() {
   const width = 1200;
   const height = 630;
 
-  return new ImageResponse(
+  const image = new ImageResponse(
     (
       <div
         style={{
@@ -27,6 +27,12 @@ export async function GET() {
     ),
     { width, height }
   );
+
+  return new Response(image.body, {
+    headers: {
+      "Content-Type": "image/png",
+    },
+  });
 }
 
 
