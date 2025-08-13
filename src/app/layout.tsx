@@ -12,18 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Farcaster frame metadata object
+// Farcaster Frames minimal metadata (optional)
 const frameMetadata = {
-  version: "next",
-  imageUrl: "https://iq-test-v1.vercel.app/image.png",
+  version: "vNext",
+  imageUrl: "/image.png",
   button: {
     title: "Start IQ Test",
     action: {
-      type: "launch_frame",
-      name: "IQ Test",
-      url: "https://iq-test-v1.vercel.app",
-      splashImageUrl: "https://iq-test-v1.vercel.app/icon.png",
-      splashBackgroundColor: "#4F46E5"
+      type: "link",
+      url: "/",
     }
   }
 };
@@ -39,7 +36,7 @@ export const metadata: Metadata = {
     description: "Test your IQ and get instant results",
     images: [
       {
-        url: "https://iq-test-v1.vercel.app/image.png",
+        url: "/og",
         width: 1200,
         height: 630,
         alt: "IQ Test"
@@ -50,16 +47,15 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "IQ Test",
     description: "Test your IQ and get instant results",
-    images: ["https://iq-test-v1.vercel.app/image.png"]
+    images: ["/og"]
   },
   other: {
-    // Embed Farcaster frame metadata as a JSON string
+    // Minimal Farcaster Frames tags (safe to remove if only targeting Mini Apps)
     "fc:frame": "vNext",
-    "fc:frame:metadata": JSON.stringify(frameMetadata),
-    "fc:frame:image": "https://iq-test-v1.vercel.app/image.png",
+    "fc:frame:image": "/og",
     "fc:frame:button:1": "Start IQ Test",
     "fc:frame:button:1:action": "link",
-    "fc:frame:button:1:target": "https://iq-test-v1.vercel.app/"
+    "fc:frame:button:1:target": "/"
   }
 };
 
