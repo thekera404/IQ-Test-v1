@@ -1,0 +1,19 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "IQ Quiz Mini App",
+    "iconUrl": "http://localhost:3000/next.svg",
+    "homeUrl": "http://localhost:3000",
+    "imageUrl": "http://localhost:3000/globe.svg",
+    "buttonTitle": "Open",
+    "splashImageUrl": "http://localhost:3000/window.svg",
+    "splashBackgroundColor": "#ffffff"
+  }
+}
+
+
