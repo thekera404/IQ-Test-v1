@@ -1,16 +1,12 @@
 {
- 
   "accountAssociation": {
     "header": "eyJmaWQiOjcwNzc5MSwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDEzMDMxN0ZBMzNkOTkwM2FDN2I5NTA4YUI2YTRjNjg4MTQ2MmUxNTEifQ",
     "payload": "eyJkb21haW4iOiJpcS10ZXN0LXYxLWl2b3J5LnZlcmNlbC5hcHAifQ",
     "signature": "MHgyNTNmYWRiOWNhNTdjY2Y4ZTNiYTQyYjljOThmMmQ1MzBlYmFkYTQ4NmVmZDQ2ODVmYjc2MDE3NjdhNDA1YWRmMjhkMTc2OGM1YTNkNzUyZGVkMmQ5MjE3Nzg5NGMzMTkzNGVhMTZiMmU0YzA1MzAyNGU3NGI1ZTQ4ZmRjZmY3ODFj"
   },
-  
-
   "name": "IQ Test",
   "description": "Test your IQ",
   "version": "1",
-
   "miniapp": {
     "version": "1",
     "name": "IQ Test",
@@ -21,19 +17,18 @@
     "splashImageUrl": "https://iq-test-v2.vercel.app/icon.png",
     "splashBackgroundColor": "#4F46E5"
   },
-
   "display": {
     "recommended_frame_height": "tall"
   },
   "capabilities": {
     "frames": {
       "status": "supported"
-    },
-    
+    }
   },
   "icons": {
-    "192x192": "https://iq-test-v1.vercel.app/icon.png"
+    "192x192": "https://iq-test-v2.vercel.app/icon.png"
   }
 }
+
 
 
