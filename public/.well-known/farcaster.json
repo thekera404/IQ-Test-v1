@@ -4,15 +4,20 @@
     "payload": "",
     "signature": ""
   },
+
+  "name": "IQ Test",
+  "description": "Test your IQ",
+  "version": "1",
+
   "miniapp": {
     "version": "1",
-    "name": "IQ Quiz Mini App",
-    "iconUrl": "http://localhost:3000/next.svg",
-    "homeUrl": "http://localhost:3000",
-    "imageUrl": "http://localhost:3000/globe.svg",
-    "buttonTitle": "Open",
-    "splashImageUrl": "http://localhost:3000/window.svg",
-    "splashBackgroundColor": "#ffffff"
+    "name": "IQ Test",
+    "iconUrl": "https://iq-test-v2.vercel.app/icon.png",
+    "homeUrl": "https://iq-test-v2.vercel.app/",
+    "imageUrl": "https://iq-test-v2.vercel.app/image.png",
+    "buttonTitle": "Start IQ Test",
+    "splashImageUrl": "https://iq-test-v2.vercel.app/icon.png",
+    "splashBackgroundColor": "#4F46E5"
   }
 }
 
