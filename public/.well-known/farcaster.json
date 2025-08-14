@@ -12,11 +12,13 @@
     "name": "IQ Test",
     "iconUrl": "https://iq-test-v2.vercel.app/icon.png",
     "homeUrl": "https://iq-test-v2.vercel.app/",
-    "imageUrl": "https://iq-test-v2.vercel.app/image.png",
+    "imageUrl": "https://iq-test-v2.vercel.app/miniapp-image",
     "buttonTitle": "Start IQ Test",
     "splashImageUrl": "https://iq-test-v2.vercel.app/icon.png",
     "splashBackgroundColor": "#4F46E5"
   },
+  "ogTitle": "IQ Test – Fast Cognitive Assessment",
+  "ogDescription": "Take a 10-question quiz and get an instant IQ estimate.",
   "ogImageUrl": "https://iq-test-v2.vercel.app/og",
   "heroImageUrl": "https://iq-test-v2.vercel.app/image.png",
   "display": {

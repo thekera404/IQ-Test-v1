@@ -19,7 +19,7 @@ const ogAbsoluteUrl = `${siteUrl}/og`;
 // Farcaster Mini App embed metadata (serialized into fc:miniapp)
 const fcMiniApp = {
   version: "1",
-  imageUrl: `${siteUrl}/image.png`,
+  imageUrl: `${siteUrl}/miniapp-image`,
   button: {
     title: "Start IQ Test",
     action: {
