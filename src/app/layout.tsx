@@ -12,21 +12,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Farcaster Frames minimal metadata (optional)
-const frameMetadata = {
-  version: "vNext",
-  imageUrl: "/image.png",
+// Base site URL for constructing absolute links used in metadata
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://iq-test-v2.vercel.app";
+const ogAbsoluteUrl = `${siteUrl}/og`;
+
+// Farcaster Mini App embed metadata (serialized into fc:miniapp)
+const fcMiniApp = {
+  version: "1",
+  imageUrl: `${siteUrl}/image.png`,
   button: {
     title: "Start IQ Test",
     action: {
-      type: "link",
-      url: "/",
-    }
-  }
+      type: "launch_miniapp" as const,
+      url: siteUrl,
+      splashImageUrl: `${siteUrl}/icon.png`,
+      splashBackgroundColor: "#4F46E5",
+    },
+  },
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://iq-test-v1.vercel.app"),
+  metadataBase: new URL(siteUrl),
   title: "IQ Test",
   description: "Test your IQ and get instant results",
   openGraph: {
@@ -52,10 +58,12 @@ export const metadata: Metadata = {
   other: {
     // Minimal Farcaster Frames tags (safe to remove if only targeting Mini Apps)
     "fc:frame": "vNext",
-    "fc:frame:image": "/og",
+    "fc:frame:image": ogAbsoluteUrl,
     "fc:frame:button:1": "Start IQ Test",
     "fc:frame:button:1:action": "link",
-    "fc:frame:button:1:target": "/"
+    "fc:frame:button:1:target": siteUrl,
+    // Farcaster Mini App embed configuration for feed previews
+    "fc:miniapp": JSON.stringify(fcMiniApp),
   }
 };
 
